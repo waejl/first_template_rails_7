@@ -11,7 +11,6 @@ gem_group :development, :test do
   gem 'factory_bot_rails'
 end
 
-copy_file "spec/factories/.keep"
 copy_file "spec/support/factory_bot.rb"
 copy_file "spec/support/capybara.rb"
 copy_file "spec/rails_helper.rb"
