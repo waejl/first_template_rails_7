@@ -253,10 +253,10 @@ end
 ENDFILE
 
 application do 
-  config.generators do |g|
+  %(config.generators do |g|
     g.javascript false
     g.stylesheets false
     g.test_framework :rspec, views: false, helper_specs: false
     g.test_unit false
-  end
+  end)
 end
