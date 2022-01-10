@@ -1,5 +1,7 @@
 require 'fileutils'
 
+gem 'sprockets-rails'
+
 gem_group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
