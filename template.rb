@@ -1,7 +1,5 @@
 require 'fileutils'
 
-gem 'sprockets-rails'
-
 gem_group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
@@ -12,6 +10,8 @@ gem_group :development, :test do
   gem 'database_cleaner'
   gem 'factory_bot_rails'
 end
+
+run_bundle
 
 generate "rspec:install"
 
