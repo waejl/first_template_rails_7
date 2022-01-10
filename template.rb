@@ -11,7 +11,7 @@ gem_group :development, :test do
   gem 'factory_bot_rails'
 end
 
-run_bundle
+run "bundle install"
 
 generate "rspec:install"
 
