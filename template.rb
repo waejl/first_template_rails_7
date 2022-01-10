@@ -11,10 +11,6 @@ gem_group :development, :test do
   gem 'factory_bot_rails'
 end
 
-run "bundle install"
-
-generate "rspec:install"
-
 copy_dir "spec"
 # FileUtils.copy_entry "rspec", 
 
