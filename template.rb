@@ -11,8 +11,11 @@ gem_group :development, :test do
   gem 'factory_bot_rails'
 end
 
-copy_dir "spec"
-# FileUtils.copy_entry "rspec", 
+copy_file "spec/factories/.keep"
+copy_file "spec/support/factory_bot.rb"
+copy_file "spec/support/capybara.rb"
+copy_file "spec/rails_helper.rb"
+copy_file "spec/spec_helper.rb"
 
 application do 
   config.generators do |g|
